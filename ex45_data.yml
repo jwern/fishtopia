@@ -1,0 +1,225 @@
+--- !ruby/object:Game
+world: !ruby/object:World
+  river: &1 !ruby/object:River
+    fish:
+    - !ruby/object:RiverChub
+      weight: 15
+      type: chub
+    - !ruby/object:RiverTrout
+      weight: 35
+      type: trout
+    - !ruby/object:RiverTrout
+      weight: 39
+      type: trout
+    - !ruby/object:RiverSalmon
+      weight: 16
+      type: salmon
+    - !ruby/object:RiverChub
+      weight: 15
+      type: chub
+    - !ruby/object:RiverSalmon
+      weight: 42
+      type: salmon
+    - !ruby/object:RiverTrout
+      weight: 21
+      type: trout
+    - !ruby/object:RiverChub
+      weight: 17
+      type: chub
+    - !ruby/object:RiverSalmon
+      weight: 26
+      type: salmon
+    - !ruby/object:RiverTrout
+      weight: 37
+      type: trout
+    - !ruby/object:RiverChub
+      weight: 17
+      type: chub
+    - !ruby/object:RiverSalmon
+      weight: 47
+      type: salmon
+    - !ruby/object:RiverChub
+      weight: 17
+      type: chub
+    - !ruby/object:RiverTrout
+      weight: 24
+      type: trout
+    grid:
+    - - "~"
+      - "~"
+      - "~"
+      - "~"
+    - - "~"
+      - "~"
+      - "~"
+      - "~"
+    - - "~"
+      - "~"
+      - "~"
+      - "~"
+    - - "~"
+      - "~"
+      - "~"
+      - "~"
+    fish_catching_difficulty: 6
+    name: river
+  ocean: !ruby/object:Ocean
+    fish:
+    - !ruby/object:OceanPorgy
+      weight: 1
+      type: porgy
+    - !ruby/object:OceanBream
+      weight: 12
+      type: bream
+    - !ruby/object:OceanSunfish
+      weight: 594
+      type: sunfish
+    - !ruby/object:OceanSunfish
+      weight: 898
+      type: sunfish
+    - !ruby/object:OceanPorgy
+      weight: 2
+      type: porgy
+    - !ruby/object:OceanBream
+      weight: 18
+      type: bream
+    - !ruby/object:OceanPorgy
+      weight: 3
+      type: porgy
+    - !ruby/object:OceanBream
+      weight: 20
+      type: bream
+    - !ruby/object:OceanSunfish
+      weight: 896
+      type: sunfish
+    - !ruby/object:OceanSunfish
+      weight: 724
+      type: sunfish
+    - !ruby/object:OceanPorgy
+      weight: 2
+      type: porgy
+    - !ruby/object:OceanBream
+      weight: 4
+      type: bream
+    - !ruby/object:OceanPorgy
+      weight: 4
+      type: porgy
+    - !ruby/object:OceanBream
+      weight: 11
+      type: bream
+    - !ruby/object:OceanSunfish
+      weight: 753
+      type: sunfish
+    - !ruby/object:OceanBream
+      weight: 10
+      type: bream
+    - !ruby/object:OceanSunfish
+      weight: 606
+      type: sunfish
+    - !ruby/object:OceanPorgy
+      weight: 1
+      type: porgy
+    - !ruby/object:OceanSunfish
+      weight: 754
+      type: sunfish
+    - !ruby/object:OceanPorgy
+      weight: 3
+      type: porgy
+    - !ruby/object:OceanBream
+      weight: 6
+      type: bream
+    - !ruby/object:OceanBream
+      weight: 18
+      type: bream
+    - !ruby/object:OceanPorgy
+      weight: 3
+      type: porgy
+    - !ruby/object:OceanSunfish
+      weight: 631
+      type: sunfish
+    - !ruby/object:OceanPorgy
+      weight: 4
+      type: porgy
+    - !ruby/object:OceanBream
+      weight: 12
+      type: bream
+    - !ruby/object:OceanSunfish
+      weight: 840
+      type: sunfish
+    grid:
+    - - "^"
+      - "^"
+      - "^"
+      - "^"
+      - "^"
+    - - "^"
+      - "^"
+      - "^"
+      - "^"
+      - "^"
+    - - "^"
+      - "^"
+      - "^"
+      - "^"
+      - "^"
+    - - "^"
+      - "^"
+      - "^"
+      - "^"
+      - "^"
+    fish_catching_difficulty: 8
+    name: ocean
+  current_location: *1
+player: !ruby/object:Player
+  inventory:
+    :bait: 1
+    :fish:
+    - !ruby/object:RiverSalmon
+      weight: 15
+      type: salmon
+minigame: !ruby/object:Minigame
+  fish_grid:
+  - - "~"
+    - "~"
+    - "~"
+    - "~"
+  - - "~"
+    - "~"
+    - f
+    - "~"
+  - - "~"
+    - "~"
+    - f
+    - "~"
+  - - "~"
+    - "~"
+    - "~"
+    - "~"
+  player_grid:
+  - - "~"
+    - "~"
+    - "~"
+    - "~"
+  - - "~"
+    - x
+    - o
+    - "~"
+  - - "~"
+    - "~"
+    - o
+    - "~"
+  - - "~"
+    - "~"
+    - "~"
+    - "~"
+  fish_icon: f
+  player_icon: o
+  answer_key:
+    A: 0
+    B: 1
+    C: 2
+    D: 3
+    '1': 0
+    '2': 1
+    '3': 2
+    '4': 3

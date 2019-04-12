@@ -1,0 +1,7 @@
+require "./graphics.rb"
+require "./fish_types.rb"
+require "./locations.rb"
+require "./minigame.rb"
+require "./world.rb"
+require "./player.rb"
+require "yaml"
