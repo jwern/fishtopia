@@ -54,7 +54,7 @@ class Game
         puts "Would you like to save before stopping?"
         save_choice = gets.chomp.downcase
 
-        if save_choice == "yes"
+        if ["yes", "yep", "sure", "ok", "okay", "y"].include?(save_choice)
           save_and_quit
         else
           puts "Okay, we won't save. See you next time!"
@@ -82,8 +82,9 @@ puts ">>New Game"
 puts ">>Load Game"
 game_state = gets.chomp.downcase
 
-if game_state == "load"
+if ["load", "load game", "continue", "l"].include?(game_state)
   game = YAML.load(File.read("ex45_data.yml"))
+  puts "-- Game loaded --"
 else
   puts intro
   game = Game.new

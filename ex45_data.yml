@@ -1,48 +1,51 @@
 --- !ruby/object:Game
 world: !ruby/object:World
-  river: &1 !ruby/object:River
+  river: !ruby/object:River
     fish:
-    - !ruby/object:RiverChub
-      weight: 15
-      type: chub
     - !ruby/object:RiverTrout
-      weight: 35
-      type: trout
-    - !ruby/object:RiverTrout
-      weight: 39
+      weight: 34
       type: trout
     - !ruby/object:RiverSalmon
+      weight: 14
+      type: salmon
+    - !ruby/object:RiverChub
       weight: 16
+      type: chub
+    - !ruby/object:RiverSalmon
+      weight: 23
       type: salmon
     - !ruby/object:RiverChub
       weight: 15
       type: chub
+    - !ruby/object:RiverTrout
+      weight: 32
+      type: trout
+    - !ruby/object:RiverChub
+      weight: 15
+      type: chub
+    - !ruby/object:RiverTrout
+      weight: 40
+      type: trout
+    - !ruby/object:RiverSalmon
+      weight: 45
+      type: salmon
+    - !ruby/object:RiverChub
+      weight: 17
+      type: chub
+    - !ruby/object:RiverTrout
+      weight: 34
+      type: trout
     - !ruby/object:RiverSalmon
       weight: 42
       type: salmon
-    - !ruby/object:RiverTrout
-      weight: 21
-      type: trout
     - !ruby/object:RiverChub
-      weight: 17
+      weight: 15
       type: chub
     - !ruby/object:RiverSalmon
-      weight: 26
+      weight: 40
       type: salmon
     - !ruby/object:RiverTrout
-      weight: 37
-      type: trout
-    - !ruby/object:RiverChub
-      weight: 17
-      type: chub
-    - !ruby/object:RiverSalmon
-      weight: 47
-      type: salmon
-    - !ruby/object:RiverChub
-      weight: 17
-      type: chub
-    - !ruby/object:RiverTrout
-      weight: 24
+      weight: 34
       type: trout
     grid:
     - - "~"
@@ -63,89 +66,86 @@ world: !ruby/object:World
       - "~"
     fish_catching_difficulty: 6
     name: river
-  ocean: !ruby/object:Ocean
+  ocean: &1 !ruby/object:Ocean
     fish:
+    - !ruby/object:OceanPorgy
+      weight: 4
+      type: porgy
+    - !ruby/object:OceanSunfish
+      weight: 589
+      type: sunfish
+    - !ruby/object:OceanBream
+      weight: 4
+      type: bream
+    - !ruby/object:OceanBream
+      weight: 4
+      type: bream
+    - !ruby/object:OceanPorgy
+      weight: 2
+      type: porgy
+    - !ruby/object:OceanSunfish
+      weight: 941
+      type: sunfish
+    - !ruby/object:OceanBream
+      weight: 19
+      type: bream
+    - !ruby/object:OceanSunfish
+      weight: 999
+      type: sunfish
+    - !ruby/object:OceanPorgy
+      weight: 1
+      type: porgy
+    - !ruby/object:OceanPorgy
+      weight: 1
+      type: porgy
+    - !ruby/object:OceanSunfish
+      weight: 686
+      type: sunfish
+    - !ruby/object:OceanBream
+      weight: 18
+      type: bream
+    - !ruby/object:OceanSunfish
+      weight: 707
+      type: sunfish
+    - !ruby/object:OceanBream
+      weight: 7
+      type: bream
     - !ruby/object:OceanPorgy
       weight: 1
       type: porgy
     - !ruby/object:OceanBream
-      weight: 12
-      type: bream
-    - !ruby/object:OceanSunfish
-      weight: 594
-      type: sunfish
-    - !ruby/object:OceanSunfish
-      weight: 898
-      type: sunfish
-    - !ruby/object:OceanPorgy
-      weight: 2
-      type: porgy
-    - !ruby/object:OceanBream
       weight: 18
       type: bream
+    - !ruby/object:OceanSunfish
+      weight: 864
+      type: sunfish
+    - !ruby/object:OceanPorgy
+      weight: 4
+      type: porgy
     - !ruby/object:OceanPorgy
       weight: 3
       type: porgy
     - !ruby/object:OceanBream
-      weight: 20
+      weight: 7
       type: bream
     - !ruby/object:OceanSunfish
-      weight: 896
+      weight: 765
       type: sunfish
-    - !ruby/object:OceanSunfish
-      weight: 724
-      type: sunfish
-    - !ruby/object:OceanPorgy
-      weight: 2
-      type: porgy
     - !ruby/object:OceanBream
-      weight: 4
+      weight: 17
       type: bream
     - !ruby/object:OceanPorgy
-      weight: 4
+      weight: 3
       type: porgy
-    - !ruby/object:OceanBream
-      weight: 11
-      type: bream
     - !ruby/object:OceanSunfish
-      weight: 753
+      weight: 555
       type: sunfish
     - !ruby/object:OceanBream
       weight: 10
       type: bream
-    - !ruby/object:OceanSunfish
-      weight: 606
-      type: sunfish
-    - !ruby/object:OceanPorgy
-      weight: 1
-      type: porgy
-    - !ruby/object:OceanSunfish
-      weight: 754
-      type: sunfish
-    - !ruby/object:OceanPorgy
-      weight: 3
-      type: porgy
-    - !ruby/object:OceanBream
-      weight: 6
-      type: bream
-    - !ruby/object:OceanBream
-      weight: 18
-      type: bream
-    - !ruby/object:OceanPorgy
-      weight: 3
-      type: porgy
-    - !ruby/object:OceanSunfish
-      weight: 631
-      type: sunfish
     - !ruby/object:OceanPorgy
       weight: 4
       type: porgy
-    - !ruby/object:OceanBream
-      weight: 12
-      type: bream
-    - !ruby/object:OceanSunfish
-      weight: 840
-      type: sunfish
     grid:
     - - "^"
       - "^"
@@ -172,46 +172,57 @@ world: !ruby/object:World
   current_location: *1
 player: !ruby/object:Player
   inventory:
-    :bait: 1
+    :bait: 0
     :fish:
     - !ruby/object:RiverSalmon
-      weight: 15
+      weight: 38
       type: salmon
+    - !ruby/object:OceanSunfish
+      weight: 671
+      type: sunfish
 minigame: !ruby/object:Minigame
   fish_grid:
-  - - "~"
-    - "~"
-    - "~"
-    - "~"
-  - - "~"
-    - "~"
+  - - "^"
+    - "^"
     - f
-    - "~"
-  - - "~"
-    - "~"
+    - "^"
+    - "^"
+  - - "^"
+    - "^"
     - f
-    - "~"
-  - - "~"
-    - "~"
-    - "~"
-    - "~"
+    - "^"
+    - "^"
+  - - "^"
+    - "^"
+    - f
+    - "^"
+    - "^"
+  - - "^"
+    - "^"
+    - f
+    - "^"
+    - "^"
   player_grid:
-  - - "~"
-    - "~"
-    - "~"
-    - "~"
-  - - "~"
+  - - x
+    - "^"
+    - o
+    - "^"
+    - "^"
+  - - x
+    - "^"
+    - o
     - x
+    - "^"
+  - - x
+    - "^"
     - o
-    - "~"
-  - - "~"
-    - "~"
+    - "^"
+    - "^"
+  - - x
+    - "^"
     - o
-    - "~"
-  - - "~"
-    - "~"
-    - "~"
-    - "~"
+    - "^"
+    - "^"
   fish_icon: f
   player_icon: o
   answer_key:
@@ -219,6 +230,7 @@ minigame: !ruby/object:Minigame
     B: 1
     C: 2
     D: 3
+    E: 4
     '1': 0
     '2': 1
     '3': 2

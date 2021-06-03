@@ -134,7 +134,7 @@ class Minigame
       puts "Would you like to spend bait on additional guesses?"
       use_bait = gets.chomp.downcase
 
-        if use_bait == "yes"
+        if ["yes", "y", "yep", "sure", "okay", "ok", "k"].include?(use_bait)
           puts "How many more guesses would you like?"
           puts "You can get up to #{player.inventory[:bait]}."
           bait_amount = gets.chomp.to_i
