@@ -33,14 +33,15 @@ Many of the keywords above will lead to additional input requests.  If you choos
 
 "**move**" you'll be asked where you would like to go.  The current options are "**river**" and "**ocean**".
 
-"**shop**" you'll be asked how much bait you want to buy.  This expect an integer input: if you try to buy more bait than you can afford, the shop will tell you the max amount of bait you can buy.
+"**shop**" you'll be asked how much bait you want to buy.  This expects an **integer** input: if you try to buy more bait than you can afford, the shop will tell you the max amount of bait you can buy.
 
 "**save**" you'll be asked if you want to save and continue or save and quit.  "**continue**" saves but lets you keep playing; "**quit**" saves and exits the program.
 
 "**stop**" asks if you'd like to save before quitting.  "**yes**" (and a few accepted variations) will save while anything else will not; both answers will then exit the program.
 
+### The fishing mini-game
 
-"**fish**" will begin the fishing mini-game.  When fishing, you will see a grid with a row of letters at the top and a column of numbers on the left like so:
+Submitting the keyword "**fish**" will begin the fishing mini-game.  When fishing, you will see a grid with a row of letters at the top and a column of numbers on the left like so:
 ```
   A B C D
 1 ~ ~ ~ ~
@@ -50,7 +51,9 @@ Many of the keywords above will lead to additional input requests.  If you choos
 ```  
 To fish in a specific location, type the letter of the column and number of the row you'd like to cast to.  For example, "**A1**" will cast to the upper-left corner of the grid shown above while "**D4**" would cast to the bottom-right corner.
 
-As in Battleship, fish take up more than one square of space: the smallest fish takes up two squares while the largest takes up four.  If you "hit" part of a fish, you'll be told "Hit!" and receive an "**o**" on that square.  If you don't hit any fish, you'll be told "Miss!" and receive an "**x**."  
+As in Battleship, fish take up more than one square of space: the smallest fish takes up two squares while the largest takes up four.  Fish are only oriented left-to-right or top-to-bottom in a straight line: fish will never be positioned diagonally or curved.
+
+If you "hit" part of a fish, you'll be told "Hit!" and receive an "**o**" on that square.  If you don't hit any fish, you'll be told "Miss!" and receive an "**x**."  
 ```
   A B C D
 1 ~ ~ x ~
@@ -62,7 +65,9 @@ In the grid above, we've tried "C1" which was a "miss."  But "B3" was a "hit!"
 
 If you "hit" all parts of a fish before running out of guesses, you'll catch that fish and it will be added to your inventory.
 
-# Todo
+If you run out of guesses before finding all parts of a fish, you'll be asked if you want to use bait to buy more guesses.  If you run out of guesses and bait, the fish will get away and the mini-game will end.
+
+## To Do
 
 Future improvements to the game will include clearer instructions and keyword options, as well as more state-specific information when typing "help" (e.g. if you type "help" while in the middle of moving locations, it will tell you the location options).
 
