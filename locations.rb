@@ -19,7 +19,7 @@ end
 class River < Location
 
   def initialize
-    fish_amount = (3..10)
+    fish_amount = (30..60)
     fish_types = [RiverSalmon, RiverChub, RiverTrout]
     grid_size = [4, 4]
     grid_icon = "~"
@@ -32,7 +32,7 @@ end
 class Ocean < Location
 
   def initialize
-    fish_amount = (5..15)
+    fish_amount = (45..75)
     fish_types = [OceanPorgy, OceanBream, OceanSunfish]
     grid_size = [4, 5]
     grid_icon = "^"
@@ -45,7 +45,7 @@ end
 class Lake < Location
 
   def initialize
-    fish_amount = (2..8)
+    fish_amount = (25..50)
     fish_types = [LakePerch, LakeWalleye, LakeBass]
     grid_size = [3, 3]
     grid_icon = "*"

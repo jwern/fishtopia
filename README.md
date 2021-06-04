@@ -69,8 +69,10 @@ If you run out of guesses before finding all parts of a fish, you'll be asked if
 
 ## To Do
 
-Future improvements to the game will include clearer instructions and keyword options, as well as more state-specific information when typing "help" (e.g. if you type "help" while in the middle of moving locations, it will tell you the location options).
+Future improvements to the game will include clearer instructions and keyword options, as well as more state-specific information when typing "help" (e.g. if you type "help" while in the middle of moving locations, it will tell you the location options).  
 
-I'd like to add more fishing locations, items players can catch (treasure or trash in addition to fish), and things to buy in the shop (or at least more types of / options for bait).
+There are also a few possible end states that need to be accounted for, such as catching all the fish in a location -- if reached, this will throw an error at the moment.  (I've adjusted the amount of fish spawned to help delay this.)
+
+I'd like to add more fishing locations, items players can catch (treasure or trash in addition to fish), and things to buy in the shop (or at least more types of / options for bait).  It would be nice to add a visual of where the fish was located if you fail to catch it.
 
 I'd also like to add an "aquarium" that stores your caught fish so they aren't just invisible items being lugged around (seemingly in your pockets).
