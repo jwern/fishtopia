@@ -4,6 +4,7 @@ class World
   def initialize
     @river = River.new
     @ocean = Ocean.new
+    @lake = Lake.new
     @current_location = @river
   end
 

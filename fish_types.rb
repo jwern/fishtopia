@@ -42,3 +42,21 @@ class OceanSunfish < Fish
     super(rand(500..1_000), "sunfish")
   end
 end
+
+class LakePerch < Fish
+  def initialize
+    super(rand(1..5), "perch")
+  end
+end
+
+class LakeWalleye < Fish
+  def initialize
+    super(rand(15..30), "walleye")
+  end
+end
+
+class LakeBass < Fish
+  def initialize
+    super(rand(5..25), "bass")
+  end
+end

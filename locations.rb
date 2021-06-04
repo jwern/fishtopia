@@ -41,3 +41,16 @@ class Ocean < Location
     super(fish_amount, fish_types, grid_size, grid_icon, name)
   end
 end
+
+class Lake < Location
+
+  def initialize
+    fish_amount = (2..8)
+    fish_types = [LakePerch, LakeWalleye, LakeBass]
+    grid_size = [3, 3]
+    grid_icon = "*"
+    name = "lake"
+
+    super(fish_amount, fish_types, grid_size, grid_icon, name)
+  end
+end
