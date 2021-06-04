@@ -15,20 +15,30 @@ Once you've finished the steps above, you can play the game in the terminal.  Yo
 Fishtopia is a keyword-based fishing game with a Battleship-style mechanic.  The keywords you can use when not actively playing the fishing mini-game are:
 
 "**fish**" - begin fishing at your current location
+
 "**move**" - move to a different fishing spot
+
 "**shop**" - exchange fish for bait at the shop
+
 "**save**" - save your current game
+
 "**stop**" - quit the game
+
 "**help**" - receive a list of keywords (a reminder of the words above)
 
 If you input an invalid keyword the game will simply ask the same question again.
 
+
 Many of the keywords above will lead to additional input requests.  If you choose...
 
 "**move**" you'll be asked where you would like to go.  The current options are "**river**" and "**ocean**".
+
 "**shop**" you'll be asked how much bait you want to buy.  This expect an integer input: if you try to buy more bait than you can afford, the shop will tell you the max amount of bait you can buy.
+
 "**save**" you'll be asked if you want to save and continue or save and quit.  "**continue**" saves but lets you keep playing; "**quit**" saves and exits the program.
+
 "**stop**" asks if you'd like to save before quitting.  "**yes**" (and a few accepted variations) will save while anything else will not; both answers will then exit the program.
+
 
 "**fish**" will begin the fishing mini-game.  When fishing, you will see a grid with a row of letters at the top and a column of numbers on the left like so:
 ```
@@ -55,5 +65,7 @@ If you "hit" all parts of a fish before running out of guesses, you'll catch tha
 # Todo
 
 Future improvements to the game will include clearer instructions and keyword options, as well as more state-specific information when typing "help" (e.g. if you type "help" while in the middle of moving locations, it will tell you the location options).
+
 I'd like to add more fishing locations, items players can catch (treasure or trash in addition to fish), and things to buy in the shop (or at least more types of / options for bait).
+
 I'd also like to add an "aquarium" that stores your caught fish so they aren't just invisible items being lugged around (seemingly in your pockets).
