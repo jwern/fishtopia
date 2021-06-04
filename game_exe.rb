@@ -10,7 +10,7 @@ class Game
   end
 
   def save_game
-    File.open("ex45_data.yml", "w") { |file| file.write(self.to_yaml) }
+    File.open("saved_game.yml", "w+") { |file| file.write(self.to_yaml) }
   end
 
   def save_and_continue(last_choice)
@@ -78,12 +78,17 @@ def intro
 END
 end
 
+saved_game_available = File.file?("saved_game.yml")
+
 puts ">>New Game"
-puts ">>Load Game"
+if saved_game_available
+  puts ">>Load Game"
+end
+
 game_state = gets.chomp.downcase
 
-if ["load", "load game", "continue", "l"].include?(game_state)
-  game = YAML.load(File.read("ex45_data.yml"))
+if saved_game_available && ["load", "load game", "continue", "l"].include?(game_state)
+  game = YAML.load(File.read("saved_game.yml"))
   puts "-- Game loaded --"
 else
   puts intro
